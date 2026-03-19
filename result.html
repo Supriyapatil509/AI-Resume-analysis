@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h2>Analysis Result</h2>
+
+    <p><b>Score:</b> {{ result.score }}</p>
+
+    <h3>Skills Found:</h3>
+    <ul>
+        {% for skill in result.skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
